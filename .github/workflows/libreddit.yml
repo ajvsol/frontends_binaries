@@ -23,13 +23,13 @@ jobs:
           
           cargo build --target x86_64-unknown-linux-gnu --release
 
-          print("ls")
+          echo "ls"
           ls
 
-          print("ls target")
+          echo "ls target"
           ls target
 
-          print("ls target/x86_64-unknown-linux-gnu/release)
+          echo "ls target/x86_64-unknown-linux-gnu/release"
           ls target/x86_64-unknown-linux-gnu/release
           
           mv target/x86_64-unknown-linux-gnu/release/libreddit ../libreddit_linux_x86_64
