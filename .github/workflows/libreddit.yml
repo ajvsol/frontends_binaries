@@ -17,7 +17,8 @@ jobs:
       - run: |
           mkdir libreddit
           cd libreddit/
-          git clone --depth 1 https://github.com/libreddit/libreddit
+          git clone --depth 1 https://github.com/redlib-org/redlib
+          mv redlib/ libreddit/
           cd libreddit/
           
           cargo build --target x86_64-unknown-linux-gnu --release
